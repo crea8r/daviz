@@ -49,7 +49,7 @@ export class DavizClient {
         assetProfile: assetProfilePda,
         owner: owner,
         systemProgram: anchor.web3.SystemProgram.programId,
-      })
+      } as any)
       .rpc();
 
     return { signature: tx, assetProfilePda };

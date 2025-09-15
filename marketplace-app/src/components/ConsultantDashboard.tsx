@@ -6,7 +6,7 @@ import type { InterestOrder } from '../lib/anchor-client';
 export const ConsultantDashboard: React.FC = () => {
   const client = useDavizClient();
   const orderManager = useOrderManager();
-  const { connected, publicKey } = useWallet();
+  const { connected } = useWallet();
 
   const [loading, setLoading] = useState(false);
   const [orders, setOrders] = useState<InterestOrder[]>([]);
